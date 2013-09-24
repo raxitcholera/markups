@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "customCell.h"
 
-@interface WorkoutMasterViewController : UITableViewController
+@interface WorkoutMasterViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property(strong,nonatomic) NSMutableArray *daysArray;
 @property(strong,nonatomic) NSMutableArray *Exercise1Array;
